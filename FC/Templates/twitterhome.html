@@ -1,0 +1,13 @@
+{% extends 'twitterlayout.html' %}
+
+{% block body %}
+<div class="row" id="contentContainer">
+  <div class="col-md-8" id ="map"></div> 
+  <div class="col-md-4">
+    <h1>in twitter</h1>
+    <select id="selTrend" onchange="optionChanged(this.value)"></select>
+    <div id="vis"></div>
+      
+    </div>
+</div> 
+{% endblock %}

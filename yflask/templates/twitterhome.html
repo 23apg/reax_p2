@@ -2,14 +2,12 @@
 
 {% block body %}
 <div class="row" id="contentContainer">
-  <div class="col-md-8" id ="map"></div> 
-  <div class="col-md-4"><h1>in twitter</h1>
+  <div class="col-md-6" id ="map"></div> 
+  <div class="col-md-6">
+    <h1>Select one of the top 5 Twitter Trends</h1>
+    <select id="selTrend" align='center' onchange="optionChanged(this.value)"></select>
+    <div id="vis"></div>
+      
+    </div>
 </div> 
 {% endblock %}
-
-<!-- API key -->
-<script type="text/javascript" src="static/js/config.js"></script>
-<!-- Our JS -->
-<script type="text/javascript" src="static/js/logic.js"></script>
-    
-
